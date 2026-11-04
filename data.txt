@@ -1,0 +1,3 @@
+apple 5 red
+banana 3 yellow
+cherry 12 dark_red

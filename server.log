@@ -1,0 +1,9 @@
+2026-10-30 08:01:22 INFO  user:arsh action:login status:success ip:192.168.1.50
+2026-10-30 08:05:44 WARN  user:dell action:file_upload status:failed_timeout ip:192.168.1.99
+2026-10-30 08:12:10 ERROR user:root action:db_backup status:critical_error ip:10.0.0.1
+2026-10-30 08:15:33 INFO  user:jessica action:login status:success ip:192.168.1.62
+2026-10-30 08:19:01 INFO  user:arsh action:file_upload status:success ip:192.168.1.50
+2026-10-30 08:22:15 ERROR user:guest action:ssh_connect status:permission_denied ip:185.220.101.4
+2026-10-30 08:30:59 WARN  user:arsh action:password_change status:failed_weak ip:192.168.1.50
+2026-10-30 08:45:12 INFO  user:jessica action:logout status:success ip:192.168.1.62
+2026-10-30 08:50:00 ERROR user:unknown action:admin_login status:brute_force_attack ip:45.129.56.12
