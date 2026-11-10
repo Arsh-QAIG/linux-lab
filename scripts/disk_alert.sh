@@ -13,9 +13,10 @@ CURRENT_USAGE=$(df -h "$TARGET_PARTITION" | awk  'NR==2 {print $5}' | tr -d '%')
 
 #COMPARE CURRENT USAGE AGAINST THRESHOLD--
 if [ "$CURRENT_USAGE" -gt "$THRESHOLD" ]; then
-    echo "[WARNING] Disk usgae on '$TARGET_PARTITION' is critically high"
+    printf '[WARNING] %s is %s%% full (threshold: %s%%)\n' \
+        "$TARGET_PARTTION" "$CURRENT_USAGE" "$THRESHOLD" 
 else 
-    echo "[OK] Disk is running at ${CURRENT_USAGE}%"
-
+    printf '[OK] %s is %s%% full (threshold: %s%%)\n' \
+        "$TARGET_PARTITION" "$CURRENT_USAGE" "$THRESHOLD"
 fi
 
